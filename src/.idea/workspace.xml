@@ -2,124 +2,124 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Project" targetName="std_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="ur_driver_gencfg" />
-      <config projectName="Project" targetName="tf_generate_messages_py" />
-      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_IOStates" />
-      <config projectName="Project" targetName="run_tests" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="ur5_kin" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="tf_generate_messages_cpp" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_SetPayload" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="octomap_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="visualization_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="Project" targetName="object_recognition_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
-      <config projectName="Project" targetName="download_extra_data" />
-      <config projectName="Project" targetName="ur10_moveit_plugin" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="gtest_main" />
-      <config projectName="Project" targetName="moveit_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="ur_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="ur_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_RobotStateRTMsg" />
-      <config projectName="Project" targetName="visualization_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="Project" targetName="ur_msgs_genpy" />
-      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_Analog" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_cpp" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="visualization_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="ur3_moveit_plugin" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_Digital" />
+      <config projectName="Project" targetName="visualization_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="roscpp_generate_messages_py" />
-      <config projectName="Project" targetName="tf_generate_messages_eus" />
-      <config projectName="Project" targetName="doxygen" />
-      <config projectName="Project" targetName="actionlib_generate_messages_eus" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="octomap_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="clean_test_results" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_lisp" />
-      <config projectName="Project" targetName="ur3_kin" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="ur_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="moveit_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="shape_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="object_recognition_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="shape_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_MasterboardDataMsg" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="actionlib_generate_messages_nodejs" />
-      <config projectName="Project" targetName="gmock_main" />
-      <config projectName="Project" targetName="ur_msgs_geneus" />
-      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_SetIO" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_eus" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="clean_test_results" />
+      <config projectName="Project" targetName="visualization_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="octomap_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="moveit_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="octomap_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="actionlib_generate_messages_py" />
-      <config projectName="Project" targetName="tf_generate_messages_nodejs" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="octomap_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_RobotStateRTMsg" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="Project" targetName="dynamic_reconfigure_gencfg" />
-      <config projectName="Project" targetName="visualization_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="ur3_moveit_plugin" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="shape_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="ur_msgs_gencpp" />
-      <config projectName="Project" targetName="ur_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="shape_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="octomap_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_py" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="roscpp_generate_messages_eus" />
-      <config projectName="Project" targetName="ur_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="gmock" />
       <config projectName="Project" targetName="object_recognition_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="visualization_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="tf_generate_messages_lisp" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="ur_msgs_genlisp" />
-      <config projectName="Project" targetName="_catkin_empty_exported_target" />
-      <config projectName="Project" targetName="ur_msgs_gennodejs" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_nodejs" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="moveit_ros_planning_gencfg" />
-      <config projectName="Project" targetName="shape_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="ur_msgs_genlisp" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="_catkin_empty_exported_target" />
+      <config projectName="Project" targetName="moveit_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="octomap_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="tests" />
-      <config projectName="Project" targetName="ur10_kin" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="actionlib_generate_messages_py" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="actionlib_generate_messages_eus" />
       <config projectName="Project" targetName="object_recognition_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="ur_msgs_geneus" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="Project" targetName="ur_driver_gencfg" />
+      <config projectName="Project" targetName="download_extra_data" />
+      <config projectName="Project" targetName="object_recognition_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="ur_msgs_generate_messages" />
-      <config projectName="Project" targetName="object_recognition_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="ur_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="ur_msgs_gennodejs" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_py" />
+      <config projectName="Project" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="Project" targetName="gmock_main" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="ur_msgs_gencpp" />
+      <config projectName="Project" targetName="ur5_kin" />
+      <config projectName="Project" targetName="shape_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="gtest_main" />
       <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_ToolDataMsg" />
       <config projectName="Project" targetName="moveit_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="visualization_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="ur3_kin" />
+      <config projectName="Project" targetName="tf_generate_messages_nodejs" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="Project" targetName="tf_generate_messages_eus" />
+      <config projectName="Project" targetName="ur10_kin" />
+      <config projectName="Project" targetName="shape_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_SetPayload" />
+      <config projectName="Project" targetName="ur_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="gtest" />
-      <config projectName="Project" targetName="ur5_moveit_plugin" />
-      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="Project" targetName="moveit_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="shape_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="ur_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="shape_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_SetIO" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="tf_generate_messages_cpp" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="roscpp_generate_messages_eus" />
+      <config projectName="Project" targetName="gmock" />
+      <config projectName="Project" targetName="doxygen" />
+      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_MasterboardDataMsg" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="Project" targetName="tests" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="octomap_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="shape_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="ur10_moveit_plugin" />
+      <config projectName="Project" targetName="ur_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="Project" targetName="moveit_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="run_tests" />
+      <config projectName="Project" targetName="ur_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="ur_msgs_genpy" />
       <config projectName="Project" targetName="moveit_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_Digital" />
+      <config projectName="Project" targetName="object_recognition_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="ur5_moveit_plugin" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="Project" targetName="object_recognition_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="tf_generate_messages_lisp" />
+      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_IOStates" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="Project" targetName="visualization_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="visualization_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="_ur_msgs_generate_messages_check_deps_Analog" />
+      <config projectName="Project" targetName="tf_generate_messages_py" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -129,7 +129,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaa2a465-2c63-4981-a881-9095268996c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/universal_robot/ur_description/launch/ur10_mm.launch" beforeDir="false" afterPath="$PROJECT_DIR$/universal_robot/ur_description/launch/ur10_mm.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../build/clion/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,11 +143,12 @@
     <session id="1174522625">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -186,7 +187,7 @@
         <entry file="file://$PROJECT_DIR$/universal_robot/ur_description/launch/test.launch">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -203,8 +204,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/universal_robot/ur_description/urdf/ur10_joint_limited_robot_mm.urdf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="57" lean-forward="true" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+            <state relative-caret-position="420">
+              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -235,8 +236,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="383" />
-    <option name="y" value="247" />
+    <option name="x" value="70" />
+    <option name="y" value="196" />
     <option name="width" value="1861" />
     <option name="height" value="1048" />
   </component>
@@ -246,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,6 +292,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1045,17 +1046,18 @@
       <workItem from="1542091935093" duration="224000" />
       <workItem from="1542092221127" duration="890000" />
       <workItem from="1542093653593" duration="1928000" />
+      <workItem from="1542258636227" duration="105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3116000" />
+    <option name="totallyTimeSpent" value="3221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="383" y="247" width="1861" height="1048" extended-state="0" />
+    <frame x="70" y="196" width="1861" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26115704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1132,7 +1134,7 @@
     <entry file="file://$PROJECT_DIR$/universal_robot/ur_description/launch/test.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1145,8 +1147,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/universal_robot/ur_description/urdf/ur10_joint_limited_robot_mm.urdf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="57" lean-forward="true" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        <state relative-caret-position="420">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
