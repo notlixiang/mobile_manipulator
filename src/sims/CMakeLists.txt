@@ -50,6 +50,6 @@ link_directories(${catkin_LIBRARY_DIRS})
 
 # add_subdirectory(src/interactivity)
 
-add_executable(ur5_shelf src/ur5_shelf.cpp)
-target_link_libraries(ur5_shelf ${catkin_LIBRARIES} ${Boost_LIBRARIES})
-install(TARGETS ur5_shelf DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+add_executable(mm_shelf src/mm_shelf.cpp)
+target_link_libraries(mm_shelf ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+install(TARGETS mm_shelf DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

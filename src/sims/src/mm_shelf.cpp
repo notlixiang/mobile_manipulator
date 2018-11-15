@@ -91,7 +91,7 @@ int main(int argc, char** argv) {
   // the `JointModelGroup`. Throughout MoveIt! the terms "planning group" and
   // "joint model group"
   // are used interchangably.
-  static const std::string PLANNING_GROUP = "manipulator";
+  static const std::string PLANNING_GROUP = "mm";
 
   // The :move_group_interface:`MoveGroup` class can be easily
   // setup using just the name of the planning group you would like to control
@@ -183,9 +183,9 @@ int main(int argc, char** argv) {
   cabin_mesh = boost::get<shape_msgs::Mesh>(cabin_mesh_msg);
 
   // cabin position
-  float cabin_x = 0.4;
+  float cabin_x = 0.8;
   float cabin_y = 0;
-  float cabin_z = -0.6;
+  float cabin_z = -0.0;
 
   geometry_msgs::Pose cabin_pose;
   cabin_pose.orientation.w = 0.707;
@@ -202,96 +202,37 @@ int main(int argc, char** argv) {
   collision_objects.push_back(collision_object_cabin);
   ROS_INFO("add cabin into the world.");
 
-  // Define a collision object ROS message.
-  moveit_msgs::CollisionObject collision_object_floor;
-  collision_object_floor.header.frame_id = move_group.getPlanningFrame();
+//  // Define a collision object ROS message.
+//  moveit_msgs::CollisionObject collision_object_floor;
+//  collision_object_floor.header.frame_id = move_group.getPlanningFrame();
+//
+//  // The id of the object is used to identify it.
+//  collision_object_floor.id = "floor";
+//
+//  // Define a box to add to the world.
+//  shape_msgs::SolidPrimitive primitive;
+//  primitive.type = primitive.BOX;
+//  primitive.dimensions.resize(3);
+//  primitive.dimensions[0] = 10;
+//  primitive.dimensions[1] = 10;
+//  primitive.dimensions[2] = 0.02;
+//
+//  // Define a pose for the box (specified relative to frame_id)
+//  geometry_msgs::Pose box_pose;
+//  box_pose.orientation.w = 1.0;
+//  box_pose.position.x = 0;
+//  box_pose.position.y = 0;
+//  box_pose.position.z = -0.01;
+//
+//  collision_object_floor.primitives.push_back(primitive);
+//  collision_object_floor.primitive_poses.push_back(box_pose);
+//  collision_object_floor.operation = collision_object_floor.ADD;
+//
+//  //  std::vector<moveit_msgs::CollisionObject> collision_objects2;
+//  //  collision_objects2.push_back(collision_object_floor);
+//  collision_objects.push_back(collision_object_floor);
+//  ROS_INFO("add floor into the world.");
 
-  // The id of the object is used to identify it.
-  collision_object_floor.id = "floor";
-
-  // Define a box to add to the world.
-  shape_msgs::SolidPrimitive primitive;
-  primitive.type = primitive.BOX;
-  primitive.dimensions.resize(3);
-  primitive.dimensions[0] = 2;
-  primitive.dimensions[1] = 2;
-  primitive.dimensions[2] = 0.01;
-
-  // Define a pose for the box (specified relative to frame_id)
-  geometry_msgs::Pose box_pose;
-  box_pose.orientation.w = 1.0;
-  box_pose.position.x = 0;
-  box_pose.position.y = 0;
-  box_pose.position.z = -0.6;
-
-  collision_object_floor.primitives.push_back(primitive);
-  collision_object_floor.primitive_poses.push_back(box_pose);
-  collision_object_floor.operation = collision_object_floor.ADD;
-
-  //  std::vector<moveit_msgs::CollisionObject> collision_objects2;
-  //  collision_objects2.push_back(collision_object_floor);
-  collision_objects.push_back(collision_object_floor);
-  ROS_INFO("add floor into the world.");
-
-  // Define a collision object ROS message.
-  moveit_msgs::CollisionObject collision_object_wall;
-  collision_object_wall.header.frame_id = move_group.getPlanningFrame();
-
-  // The id of the object is used to identify it.
-  collision_object_wall.id = "wall";
-
-  // Define a box to add to the world.
-  //  shape_msgs::SolidPrimitive primitive;
-  primitive.type = primitive.BOX;
-  primitive.dimensions.resize(3);
-  primitive.dimensions[0] = 0.01;
-  primitive.dimensions[1] = 2;
-  primitive.dimensions[2] = 1.5;
-
-  // Define a pose for the box (specified relative to frame_id)
-  //  geometry_msgs::Pose box_pose;
-  box_pose.orientation.w = 1.0;
-  box_pose.position.x = -0.4;
-  box_pose.position.y = 0;
-  box_pose.position.z = 0.2;
-
-  collision_object_wall.primitives.push_back(primitive);
-  collision_object_wall.primitive_poses.push_back(box_pose);
-  collision_object_wall.operation = collision_object_wall.ADD;
-
-  //  std::vector<moveit_msgs::CollisionObject> collision_objects2;
-  collision_objects.push_back(collision_object_wall);
-  ROS_INFO("add wall into the world.");
-
-  // Define a collision object ROS message.
-  moveit_msgs::CollisionObject collision_object_base;
-  collision_object_base.header.frame_id = move_group.getPlanningFrame();
-
-  // The id of the object is used to identify it.
-  collision_object_base.id = "base";
-
-  // Define a box to add to the world.
-  //  shape_msgs::SolidPrimitive primitive;
-  primitive.type = primitive.BOX;
-  primitive.dimensions.resize(3);
-  primitive.dimensions[0] = 0.5;
-  primitive.dimensions[1] = 0.5;
-  primitive.dimensions[2] = 0.6;
-
-  // Define a pose for the box (specified relative to frame_id)
-  //  geometry_msgs::Pose box_pose;
-  box_pose.orientation.w = 1.0;
-  box_pose.position.x = 0;
-  box_pose.position.y = 0;
-  box_pose.position.z = -0.3;
-
-  collision_object_base.primitives.push_back(primitive);
-  collision_object_base.primitive_poses.push_back(box_pose);
-  collision_object_base.operation = collision_object_base.ADD;
-
-  //  std::vector<moveit_msgs::CollisionObject> collision_objects2;
-  collision_objects.push_back(collision_object_base);
-  ROS_INFO("add base into the world.");
 
   planning_scene_interface.addCollisionObjects(collision_objects);
   planning_scene_interface.applyCollisionObjects(collision_objects);
