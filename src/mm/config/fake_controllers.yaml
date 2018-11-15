@@ -1,0 +1,12 @@
+controller_list:
+  - name: fake_mm_controller
+    joints:
+      - world_agv_joint_x
+      - world_agv_joint_y
+      - world_agv_joint_z
+      - shoulder_pan_joint
+      - shoulder_lift_joint
+      - elbow_joint
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
