@@ -446,21 +446,21 @@ int main(int argc, char **argv) {
                     //        robot_state::RobotState& current_state =
                     //            planning_scene.getCurrentStateNonConst();
 
-                    std::vector<double> joint_values = {0, 0.0, 0, 0.0, 0.0, 0.0};
-                    //        const robot_model::JointModelGroup* joint_model_group =
-                    //            current_state.getJointModelGroup("manipulator");
-                    //        current_state.setJointGroupPositions(joint_model_group,
-                    //        joint_values);
-                    //        current_state.printStatePositions();
-
-                    robot_state::RobotState state(scene->getRobotModel());
-                    state.setJointGroupPositions(joint_model_group, joint_values);
-                    scene->setCurrentState(state);
-                    robot_state::RobotState &current_state =
-                            scene->getCurrentStateNonConst();
-                    //        current_state.printStatePositions();
-                    bool flag = scene->isStateValid(current_state, "manipulator");
-                    ROS_INFO("isStateValid ? %s", flag ? "yes" : "no");
+//                    std::vector<double> joint_values = {0, 0.0, 0, 0.0, 0.0, 0.0};
+//                    //        const robot_model::JointModelGroup* joint_model_group =
+//                    //            current_state.getJointModelGroup("manipulator");
+//                    //        current_state.setJointGroupPositions(joint_model_group,
+//                    //        joint_values);
+//                    //        current_state.printStatePositions();
+//
+//                    robot_state::RobotState state(scene->getRobotModel());
+//                    state.setJointGroupPositions(joint_model_group, joint_values);
+//                    scene->setCurrentState(state);
+//                    robot_state::RobotState &current_state =
+//                            scene->getCurrentStateNonConst();
+//                    //        current_state.printStatePositions();
+//                    bool flag = scene->isStateValid(current_state, "manipulator");
+//                    ROS_INFO("isStateValid ? %s", flag ? "yes" : "no");
 
                     //        collision_detection::AllowedCollisionMatrix acm =
                     //            scene->getAllowedCollisionMatrix();
