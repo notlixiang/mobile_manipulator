@@ -53,3 +53,8 @@ link_directories(${catkin_LIBRARY_DIRS})
 add_executable(mm_shelf src/mm_shelf.cpp)
 target_link_libraries(mm_shelf ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 install(TARGETS mm_shelf DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
+
+add_executable(mm_shelf_autotest src/mm_shelf_autotest.cpp)
+target_link_libraries(mm_shelf_autotest ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+install(TARGETS mm_shelf_autotest DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
