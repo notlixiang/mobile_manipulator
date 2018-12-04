@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="ompl" targetName="demo_GeometricCarPlanning" />
+      <config projectName="ompl" targetName="ompl" />
+      <config projectName="ompl" targetName="py_ompl" />
+      <config projectName="ompl" targetName="test_machine_specs" />
+      <config projectName="ompl" targetName="demo_CForestCircleGridBenchmark" />
+      <config projectName="ompl" targetName="demo_HybridSystemPlanning" />
+      <config projectName="ompl" targetName="demo_VectorFieldNonconservative" />
+      <config projectName="ompl" targetName="test_grid" />
+      <config projectName="ompl" targetName="uninstall" />
+      <config projectName="ompl" targetName="demo_PlannerData" />
+      <config projectName="ompl" targetName="demo_OptimalPlanning" />
+      <config projectName="ompl" targetName="test_pdf" />
+      <config projectName="ompl" targetName="demo_RigidBodyPlanning" />
+      <config projectName="ompl" targetName="regression_test" />
+      <config projectName="ompl" targetName="demo_RigidBodyPlanningWithIK" />
+      <config projectName="ompl" targetName="test_planner_data" />
+      <config projectName="ompl" targetName="test_2dmap_control" />
+      <config projectName="ompl" targetName="test_gridb" />
+      <config projectName="ompl" targetName="test_planner_data_control" />
+      <config projectName="ompl" targetName="demo_RigidBodyPlanningWithODESolverAndControls" />
+      <config projectName="ompl" targetName="test_2dmap_geometric_simple" />
+      <config projectName="ompl" targetName="test_ptc" />
+      <config projectName="ompl" targetName="demo_StateSampling" />
+      <config projectName="ompl" targetName="demo_Koules" />
+      <config projectName="ompl" targetName="demo_Point2DPlanning" />
+      <config projectName="ompl" targetName="test_2dmap_ik" />
+      <config projectName="ompl" targetName="demo_HypercubeBenchmark" />
+      <config projectName="ompl" targetName="test_state_spaces" />
+      <config projectName="ompl" targetName="test_heap" />
+      <config projectName="ompl" targetName="test_nearestneighbors" />
+      <config projectName="ompl" targetName="demo_KinematicChainBenchmark" />
+      <config projectName="ompl" targetName="demo_RigidBodyPlanningWithControls" />
+      <config projectName="ompl" targetName="demo_ThunderLightning" />
+      <config projectName="ompl" targetName="test_2dcircles_opt_geometric" />
+      <config projectName="ompl" targetName="test_2denvs_geometric" />
+      <config projectName="ompl" targetName="demo_PlannerProgressProperties" />
+      <config projectName="ompl" targetName="test_state_operations" />
+      <config projectName="ompl" targetName="demo_RigidBodyPlanningWithIntegrationAndControls" />
+      <config projectName="ompl" targetName="clean_bindings" />
+      <config projectName="ompl" targetName="demo_VectorFieldConservative" />
+      <config projectName="ompl" targetName="test_state_storage" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_DIR="../../build/clion_ompl" BUILD_OPTIONS="-j8" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f6031fe-f9fb-4b01-b72e-245f3290f87a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeModules/ompl.pc" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeModules/ompl.pc" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/../../build/clion/" />
+    <ignored path="$PROJECT_DIR$/../../build/clion_ompl/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="425104502">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="92" />
+    <option name="y" value="172" />
+    <option name="width" value="1861" />
+    <option name="height" value="1078" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ompl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ompl-release-release-kinetic-ompl" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clean_bindings" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="clean_bindings" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_CForestCircleGridBenchmark" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_CForestCircleGridBenchmark" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_CForestCircleGridBenchmark">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_GeometricCarPlanning" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_GeometricCarPlanning" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_GeometricCarPlanning">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_HybridSystemPlanning" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_HybridSystemPlanning" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_HybridSystemPlanning">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_HypercubeBenchmark" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_HypercubeBenchmark" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_HypercubeBenchmark">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_KinematicChainBenchmark" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_KinematicChainBenchmark" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_KinematicChainBenchmark">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_Koules" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_Koules" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_Koules">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_OptimalPlanning" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_OptimalPlanning" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_OptimalPlanning">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_PlannerData" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_PlannerData" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_PlannerData">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_PlannerProgressProperties" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_PlannerProgressProperties" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_PlannerProgressProperties">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_Point2DPlanning" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_Point2DPlanning" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_Point2DPlanning">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_RigidBodyPlanning" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_RigidBodyPlanning" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_RigidBodyPlanning">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_RigidBodyPlanningWithControls" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_RigidBodyPlanningWithControls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_RigidBodyPlanningWithControls">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_RigidBodyPlanningWithIK" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_RigidBodyPlanningWithIK" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_RigidBodyPlanningWithIK">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_RigidBodyPlanningWithIntegrationAndControls" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_RigidBodyPlanningWithIntegrationAndControls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_RigidBodyPlanningWithIntegrationAndControls">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_RigidBodyPlanningWithODESolverAndControls" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_RigidBodyPlanningWithODESolverAndControls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_RigidBodyPlanningWithODESolverAndControls">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_StateSampling" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_StateSampling" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_StateSampling">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_ThunderLightning" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_ThunderLightning" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_ThunderLightning">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_VectorFieldConservative" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_VectorFieldConservative" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_VectorFieldConservative">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_VectorFieldNonconservative" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="demo_VectorFieldNonconservative" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="demo_VectorFieldNonconservative">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ompl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="ompl" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="py_ompl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="py_ompl" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="regression_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="regression_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2dcircles_opt_geometric" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_2dcircles_opt_geometric" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_2dcircles_opt_geometric">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2denvs_geometric" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_2denvs_geometric" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_2denvs_geometric">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2dmap_control" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_2dmap_control" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_2dmap_control">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2dmap_geometric_simple" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_2dmap_geometric_simple" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_2dmap_geometric_simple">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2dmap_ik" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_2dmap_ik" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_2dmap_ik">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_grid" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_grid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_grid">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_gridb" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_gridb" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_gridb">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_heap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_heap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_heap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_machine_specs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_machine_specs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_machine_specs">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_nearestneighbors" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_nearestneighbors" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_nearestneighbors">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_pdf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_pdf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_pdf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_planner_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_planner_data" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_planner_data">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_planner_data_control" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_planner_data_control" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_planner_data_control">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_ptc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_ptc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_ptc">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_state_operations" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_state_operations" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_state_operations">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_state_spaces" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_state_spaces" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_state_spaces">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_state_storage" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="test_state_storage" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ompl" RUN_TARGET_NAME="test_state_storage">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ompl" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.uninstall" />
+      <item itemvalue="Application.demo_CForestCircleGridBenchmark" />
+      <item itemvalue="Application.demo_GeometricCarPlanning" />
+      <item itemvalue="Application.demo_HybridSystemPlanning" />
+      <item itemvalue="Application.demo_HypercubeBenchmark" />
+      <item itemvalue="Application.demo_KinematicChainBenchmark" />
+      <item itemvalue="Application.demo_Koules" />
+      <item itemvalue="Application.demo_OptimalPlanning" />
+      <item itemvalue="Application.demo_PlannerData" />
+      <item itemvalue="Application.demo_PlannerProgressProperties" />
+      <item itemvalue="Application.demo_Point2DPlanning" />
+      <item itemvalue="Application.demo_RigidBodyPlanning" />
+      <item itemvalue="Application.demo_RigidBodyPlanningWithControls" />
+      <item itemvalue="Application.demo_RigidBodyPlanningWithIK" />
+      <item itemvalue="Application.demo_RigidBodyPlanningWithIntegrationAndControls" />
+      <item itemvalue="Application.demo_RigidBodyPlanningWithODESolverAndControls" />
+      <item itemvalue="Application.demo_StateSampling" />
+      <item itemvalue="Application.demo_ThunderLightning" />
+      <item itemvalue="Application.demo_VectorFieldConservative" />
+      <item itemvalue="Application.demo_VectorFieldNonconservative" />
+      <item itemvalue="Application.clean_bindings" />
+      <item itemvalue="Application.py_ompl" />
+      <item itemvalue="Application.ompl" />
+      <item itemvalue="Application.test_2dcircles_opt_geometric" />
+      <item itemvalue="Application.test_2denvs_geometric" />
+      <item itemvalue="Application.test_2dmap_control" />
+      <item itemvalue="Application.test_2dmap_geometric_simple" />
+      <item itemvalue="Application.test_2dmap_ik" />
+      <item itemvalue="Application.test_grid" />
+      <item itemvalue="Application.test_gridb" />
+      <item itemvalue="Application.test_heap" />
+      <item itemvalue="Application.test_machine_specs" />
+      <item itemvalue="Application.test_nearestneighbors" />
+      <item itemvalue="Application.test_pdf" />
+      <item itemvalue="Application.test_planner_data" />
+      <item itemvalue="Application.test_planner_data_control" />
+      <item itemvalue="Application.test_ptc" />
+      <item itemvalue="Application.test_state_operations" />
+      <item itemvalue="Application.test_state_spaces" />
+      <item itemvalue="Application.test_state_storage" />
+      <item itemvalue="Application.regression_test" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f6031fe-f9fb-4b01-b72e-245f3290f87a" name="Default Changelist" comment="" />
+      <created>1543903276503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543903276503</updated>
+      <workItem from="1543903277657" duration="118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="118000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986242" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>
