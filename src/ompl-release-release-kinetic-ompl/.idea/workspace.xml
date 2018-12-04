@@ -51,12 +51,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f6031fe-f9fb-4b01-b72e-245f3290f87a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py-bindings/ompl/util/libompl.so" beforeDir="false" afterPath="$PROJECT_DIR$/py-bindings/ompl/util/libompl.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="8f6031fe-f9fb-4b01-b72e-245f3290f87a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/../../build/clion/" />
     <ignored path="$PROJECT_DIR$/../../build/clion_ompl/" />
@@ -71,6 +66,7 @@
     <session id="425104502">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -160,11 +156,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="92" />
-    <option name="y" value="172" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="84" />
+    <option name="y" value="155" />
     <option name="width" value="1861" />
-    <option name="height" value="1078" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -506,19 +502,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543903276503</updated>
-      <workItem from="1543903277657" duration="7931000" />
+      <workItem from="1543903277657" duration="8009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7931000" />
+    <option name="totallyTimeSpent" value="8009000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
+    <frame x="84" y="155" width="1861" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986242" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25013775" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
