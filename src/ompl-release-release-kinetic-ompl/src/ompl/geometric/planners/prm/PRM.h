@@ -48,17 +48,14 @@
 #include <vector>
 #include <map>
 
-namespace ompl
-{
+namespace ompl {
 
-    namespace base
-    {
+    namespace base {
         // Forward declare for use in implementation
         OMPL_CLASS_FORWARD(OptimizationObjective);
     }
 
-    namespace geometric
-    {
+    namespace geometric {
 
         /**
            @anchor gPRM
@@ -80,8 +77,7 @@ namespace ompl
         */
 
         /** \brief Probabilistic RoadMap planner */
-        class PRM : public base::Planner
-        {
+        class PRM : public base::Planner {
         public:
 
             struct vertex_state_t {
@@ -111,34 +107,34 @@ namespace ompl
 
              @par Edges should be undirected and have a weight property.
              */
-            typedef boost::adjacency_list <
-                boost::vecS, boost::vecS, boost::undirectedS,
-                boost::property < vertex_state_t, base::State*,
-                boost::property < vertex_total_connection_attempts_t, unsigned long int,
-                boost::property < vertex_successful_connection_attempts_t, unsigned long int,
-                boost::property < boost::vertex_predecessor_t, unsigned long int,
-                boost::property < boost::vertex_rank_t, unsigned long int > > > > >,
-                boost::property < boost::edge_weight_t, base::Cost >
+            typedef boost::adjacency_list<
+                    boost::vecS, boost::vecS, boost::undirectedS,
+                    boost::property<vertex_state_t, base::State *,
+                            boost::property<vertex_total_connection_attempts_t, unsigned long int,
+                                    boost::property<vertex_successful_connection_attempts_t, unsigned long int,
+                                            boost::property<boost::vertex_predecessor_t, unsigned long int,
+                                                    boost::property<boost::vertex_rank_t, unsigned long int> > > > >,
+                    boost::property<boost::edge_weight_t, base::Cost>
             > Graph;
 
             /** @brief The type for a vertex in the roadmap. */
             typedef boost::graph_traits<Graph>::vertex_descriptor Vertex;
             /** @brief The type for an edge in the roadmap. */
-            typedef boost::graph_traits<Graph>::edge_descriptor   Edge;
+            typedef boost::graph_traits<Graph>::edge_descriptor Edge;
 
             /** @brief A nearest neighbors data structure for roadmap vertices. */
-            typedef std::shared_ptr< NearestNeighbors<Vertex> > RoadmapNeighbors;
+            typedef std::shared_ptr<NearestNeighbors<Vertex> > RoadmapNeighbors;
 
             /** @brief A function returning the milestones that should be
              * attempted to connect to. */
-            typedef std::function<const std::vector<Vertex>&(const Vertex)> ConnectionStrategy;
+            typedef std::function<const std::vector<Vertex> &(const Vertex)> ConnectionStrategy;
 
             /** @brief A function that can reject connections.
 
              This is called after previous connections from the neighbor list
              have been added to the roadmap.
              */
-            typedef std::function<bool(const Vertex&, const Vertex&)> ConnectionFilter;
+            typedef std::function<bool(const Vertex &, const Vertex &)> ConnectionFilter;
 
             /** \brief Constructor */
             PRM(const base::SpaceInformationPtr &si, bool starStrategy = false);
@@ -160,11 +156,11 @@ namespace ompl
              attempt must be made. The default connection strategy is to connect
              a milestone's 10 closest neighbors.
              */
-            void setConnectionStrategy(const ConnectionStrategy& connectionStrategy)
-            {
+            void setConnectionStrategy(const ConnectionStrategy &connectionStrategy) {
                 connectionStrategy_ = connectionStrategy;
                 userSetConnectionStrategy_ = true;
             }
+
             /** \brief Convenience function that sets the connection strategy to the
              default one with k nearest neighbors.
              */
@@ -183,8 +179,7 @@ namespace ompl
              a neighboring milestone and returns whether a connection should be
              attempted.
              */
-            void setConnectionFilter(const ConnectionFilter& connectionFilter)
-            {
+            void setConnectionFilter(const ConnectionFilter &connectionFilter) {
                 connectionFilter_ = connectionFilter;
             }
 
@@ -239,8 +234,7 @@ namespace ompl
 
             /** \brief Set a different nearest neighbors datastructure */
             template<template<typename T> class NN>
-            void setNearestNeighbors()
-            {
+            void setNearestNeighbors() {
                 nn_.reset(new NN<Vertex>());
                 if (!userSetConnectionStrategy_)
                     connectionStrategy_ = ConnectionStrategy();
@@ -250,25 +244,21 @@ namespace ompl
 
             virtual void setup();
 
-            const Graph& getRoadmap() const
-            {
+            const Graph &getRoadmap() const {
                 return g_;
             }
 
             /** \brief Return the number of milestones currently in the graph */
-            unsigned long int milestoneCount() const
-            {
+            unsigned long int milestoneCount() const {
                 return boost::num_vertices(g_);
             }
 
             /** \brief Return the number of edges currently in the graph */
-            unsigned long int edgeCount() const
-            {
+            unsigned long int edgeCount() const {
                 return boost::num_edges(g_);
             }
 
-            const RoadmapNeighbors& getNearestNeighbors()
-            {
+            const RoadmapNeighbors &getNearestNeighbors() {
                 return nn_;
             }
 
@@ -295,13 +285,14 @@ namespace ompl
             /** \brief Attempt to connect disjoint components in the
                 roadmap using random bounding motions (the PRM
                 expansion step) */
-            void expandRoadmap(const base::PlannerTerminationCondition &ptc, std::vector<base::State*> &workStates);
+            void expandRoadmap(const base::PlannerTerminationCondition &ptc, std::vector<base::State *> &workStates);
 
             /** Thread that checks for solution */
             void checkForSolution(const base::PlannerTerminationCondition &ptc, base::PathPtr &solution);
 
             /** \brief Check if there exists a solution, i.e., there exists a pair of milestones such that the first is in \e start and the second is in \e goal, and the two milestones are in the same connected component. If a solution is found, it is constructed in the \e solution argument. */
-            bool maybeConstructSolution(const std::vector<Vertex> &starts, const std::vector<Vertex> &goals, base::PathPtr &solution);
+            bool maybeConstructSolution(const std::vector<Vertex> &starts, const std::vector<Vertex> &goals,
+                                        base::PathPtr &solution);
 
             /** \brief Returns the value of the addedNewSolution_ member. */
             bool addedNewSolution() const;
@@ -314,98 +305,96 @@ namespace ompl
             base::Cost costHeuristic(Vertex u, Vertex v) const;
 
             /** \brief Compute distance between two milestones (this is simply distance between the states of the milestones) */
-            double distanceFunction(const Vertex a, const Vertex b) const
-            {
+            double distanceFunction(const Vertex a, const Vertex b) const {
                 return si_->distance(stateProperty_[a], stateProperty_[b]);
             }
 
             ///////////////////////////////////////
             // Planner progress property functions
-            std::string getIterationCount() const
-            {
+            std::string getIterationCount() const {
                 return std::to_string(iterations_);
             }
-            std::string getBestCost() const
-            {
+
+            std::string getBestCost() const {
                 return std::to_string(bestCost_.value());
             }
-            std::string getMilestoneCountString() const
-            {
+
+            std::string getMilestoneCountString() const {
                 return std::to_string(milestoneCount());
             }
-            std::string getEdgeCountString() const
-            {
+
+            std::string getEdgeCountString() const {
                 return std::to_string(edgeCount());
             }
 
             /** \brief Flag indicating whether the default connection strategy is the Star strategy */
-            bool                                                   starStrategy_;
+            bool starStrategy_;
 
             /** \brief Sampler user for generating valid samples in the state space */
-            base::ValidStateSamplerPtr                             sampler_;
+            base::ValidStateSamplerPtr sampler_;
 
             /** \brief Sampler user for generating random in the state space */
-            base::StateSamplerPtr                                  simpleSampler_;
+            base::StateSamplerPtr simpleSampler_;
 
             /** \brief Nearest neighbors data structure */
-            RoadmapNeighbors                                       nn_;
+            RoadmapNeighbors nn_;
 
             /** \brief Connectivity graph */
-            Graph                                                  g_;
+            Graph g_;
 
             /** \brief Array of start milestones */
-            std::vector<Vertex>                                    startM_;
+            std::vector<Vertex> startM_;
 
             /** \brief Array of goal milestones */
-            std::vector<Vertex>                                    goalM_;
+            std::vector<Vertex> goalM_;
 
             /** \brief Access to the internal base::state at each Vertex */
-            boost::property_map<Graph, vertex_state_t>::type       stateProperty_;
+            boost::property_map<Graph, vertex_state_t>::type stateProperty_;
 
             /** \brief Access to the number of total connection attempts for a vertex */
             boost::property_map<Graph,
-                vertex_total_connection_attempts_t>::type          totalConnectionAttemptsProperty_;
+                    vertex_total_connection_attempts_t>::type totalConnectionAttemptsProperty_;
 
             /** \brief Access to the number of successful connection attempts for a vertex */
             boost::property_map<Graph,
-                vertex_successful_connection_attempts_t>::type     successfulConnectionAttemptsProperty_;
+                    vertex_successful_connection_attempts_t>::type successfulConnectionAttemptsProperty_;
 
             /** \brief Access to the weights of each Edge */
             boost::property_map<Graph, boost::edge_weight_t>::type weightProperty_;
 
             /** \brief Data structure that maintains the connected components */
             boost::disjoint_sets<
-                boost::property_map<Graph, boost::vertex_rank_t>::type,
-                boost::property_map<Graph, boost::vertex_predecessor_t>::type >
-                                                                   disjointSets_;
+                    boost::property_map<Graph, boost::vertex_rank_t>::type,
+                    boost::property_map<Graph, boost::vertex_predecessor_t>::type>
+                    disjointSets_;
 
             /** \brief Function that returns the milestones to attempt connections with */
-            ConnectionStrategy                                     connectionStrategy_;
+            ConnectionStrategy connectionStrategy_;
 
             /** \brief Function that can reject a milestone connection */
-            ConnectionFilter                                       connectionFilter_;
+            ConnectionFilter connectionFilter_;
 
             /** \brief Flag indicating whether the employed connection strategy was set by the user (or defaults are assumed) */
-            bool                                                   userSetConnectionStrategy_;
+            bool userSetConnectionStrategy_;
 
             /** \brief Random number generator */
-            RNG                                                    rng_;
+            RNG rng_;
 
             /** \brief A flag indicating that a solution has been added during solve() */
-            bool                                                   addedNewSolution_;
+            bool addedNewSolution_;
 
             /** \brief Mutex to guard access to the Graph member (g_) */
-            mutable std::mutex                                     graphMutex_;
+            mutable std::mutex graphMutex_;
 
             /** \brief Objective cost function for PRM graph edges */
-            base::OptimizationObjectivePtr                         opt_;
+            base::OptimizationObjectivePtr opt_;
 
             //////////////////////////////
             // Planner progress properties
             /** \brief Number of iterations the algorithm performed */
-            unsigned long int                                      iterations_;
+            unsigned long int iterations_;
             /** \brief Best cost found so far by algorithm */
-            base::Cost                                             bestCost_;
+            base::Cost bestCost_;
         };
 
     }
