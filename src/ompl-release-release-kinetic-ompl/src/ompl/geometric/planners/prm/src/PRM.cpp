@@ -268,6 +268,7 @@ void ompl::geometric::PRM::growRoadmap(const base::PlannerTerminationCondition &
         sampler_ = si_->allocValidStateSampler();
 
     base::State *workState = si_->allocState();
+
     growRoadmap(ptc, workState);
     si_->freeState(workState);
 }
@@ -386,6 +387,7 @@ ompl::base::PlannerStatus ompl::geometric::PRM::solve(const base::PlannerTermina
 
     unsigned long int nrStartStates = boost::num_vertices(g_);
     OMPL_INFORM("%s: Starting planning with %lu states already in datastructure", getName().c_str(), nrStartStates);
+//以上都在初始化
 
     // Reset addedNewSolution_ member and create solution checking thread
     addedNewSolution_ = false;

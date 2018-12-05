@@ -185,8 +185,8 @@ void ompl::geometric::LazyPRM::clear() {
 }
 
 void ompl::geometric::LazyPRM::freeMemory() {
-    foreach (Vertex
-                     v, boost::vertices(g_))si_->freeState(stateProperty_[v]);
+            foreach (Vertex
+                             v, boost::vertices(g_))si_->freeState(stateProperty_[v]);
     g_.clear();
 }
 
@@ -203,14 +203,13 @@ ompl::geometric::LazyPRM::Vertex ompl::geometric::LazyPRM::addMilestone(base::St
     //
 
     const std::vector<Vertex> &neighbors = connectionStrategy_(m);// 找到邻近的顶点
-    foreach (Vertex n, neighbors)
-            if (connectionFilter_(m, n)) {
-                const base::Cost weight = opt_->motionCost(stateProperty_[m], stateProperty_[n]);
-                const Graph::edge_property_type properties(weight);
-                const Edge &e = boost::add_edge(m, n, properties, g_).first;
-                edgeValidityProperty_[e] = VALIDITY_UNKNOWN;
-                uniteComponents(m, n);
-            }
+            foreach (Vertex n, neighbors)if (connectionFilter_(m, n)) {
+                        const base::Cost weight = opt_->motionCost(stateProperty_[m], stateProperty_[n]);
+                        const Graph::edge_property_type properties(weight);
+                        const Edge &e = boost::add_edge(m, n, properties, g_).first;
+                        edgeValidityProperty_[e] = VALIDITY_UNKNOWN;
+                        uniteComponents(m, n);
+                    }
 
     nn_->add(m);
 
@@ -253,7 +252,6 @@ ompl::base::PlannerStatus ompl::geometric::LazyPRM::solve(const base::PlannerTer
             return base::PlannerStatus::INVALID_GOAL;
         }
     }
-
 
 
     unsigned long int nrStartStates = boost::num_vertices(g_);
@@ -359,9 +357,9 @@ void ompl::geometric::LazyPRM::markComponent(Vertex v, unsigned long int newComp
         componentSize_[newComponent]++;
         boost::graph_traits<Graph>::adjacency_iterator nbh, last;
         for (boost::tie(nbh, last) = boost::adjacent_vertices(n, g_);
-        nbh != last;
-        ++nbh)
-        q.push(*nbh);
+             nbh != last;
+             ++nbh)
+            q.push(*nbh);
     }
 }
 
@@ -385,12 +383,13 @@ ompl::base::PathPtr ompl::geometric::LazyPRM::constructSolution(const Vertex &st
     // the numbering will not be 0 .. N-1 otherwise.
     unsigned long int index = 0;
     boost::graph_traits<Graph>::vertex_iterator vi, vend;
+    //遍历图中的所有顶点
     for (boost::tie(vi, vend) = boost::vertices(g_);
     vi != vend;
-    ++vi, ++index)//遍历图中的所有顶点
-    indexProperty_[*vi] = index;//更新索引值
+    ++vi, ++index) indexProperty_[*vi] = index;//更新索引值
 
     boost::property_map<Graph, boost::vertex_predecessor_t>::type prev;
+    //使用A*算法找路径
     try {
         // Consider using a persistent distance_map if it's slow
         boost::astar_search(g_, start,
@@ -407,33 +406,36 @@ ompl::base::PathPtr ompl::geometric::LazyPRM::constructSolution(const Vertex &st
     catch (AStarFoundGoal &) {
     }
     if (prev[goal] == goal)
-        throw Exception(name_, "Could not find solution path");
+        throw Exception(name_, "Could not find solution path");//?
 
     // First, get the solution states without copying them, and check them for validity.
     // We do all the node validity checks for the vertices, as this may remove a larger
     // part of the graph (compared to removing an edge).
     std::vector<const base::State *> states(1, stateProperty_[goal]);
-    std::set<Vertex> milestonesToRemove;
+    std::set <Vertex> milestonesToRemove;
+    //向前递归
     for (Vertex pos = prev[goal]; prev[pos] != pos; pos = prev[pos]) {
         const base::State *st = stateProperty_[pos];
         unsigned int &vd = vertexValidityProperty_[pos];
-        if ((vd & VALIDITY_TRUE) == 0)
+        if ((vd & VALIDITY_TRUE) == 0)//if vd == 0 (false) //检查节点本身是否合法，做标记
             if (si_->isValid(st))
                 vd |= VALIDITY_TRUE;
         if ((vd & VALIDITY_TRUE) == 0)
-            milestonesToRemove.insert(pos);
-        if (milestonesToRemove.empty())
+            milestonesToRemove.insert(pos);//不合法就加入移除集合
+        if (milestonesToRemove.empty())//存储从后到前的最长全部合法路径点集
             states.push_back(st);
     }
 
     // We remove *all* invalid vertices. This is not entirely as described in the original LazyPRM
     // paper, as the paper suggest removing the first vertex only, and then recomputing the
-    // shortest path. Howeve, the paper says the focus is on efficient vertex & edge removal,
+    // shortest path. However, the paper says the focus is on efficient vertex & edge removal,
     // rather than collision checking, so this modification is in the spirit of the paper.
+
+    //此路径不合法，移除不合法点集，return
     if (!milestonesToRemove.empty()) {
         unsigned long int comp = vertexComponentProperty_[start];
         // Remember the current neighbors.
-        std::set<Vertex> neighbors;
+        std::set <Vertex> neighbors;
         for (std::set<Vertex>::iterator it = milestonesToRemove.begin(); it != milestonesToRemove.end(); ++it) {
             boost::graph_traits<Graph>::adjacency_iterator nbh, last;
             for (boost::tie(nbh, last) = boost::adjacent_vertices(*it, g_);
@@ -461,10 +463,12 @@ ompl::base::PathPtr ompl::geometric::LazyPRM::constructSolution(const Vertex &st
         return base::PathPtr();
     }
 
+
     // start is checked for validity already
     states.push_back(stateProperty_[start]);
 
     // Check the edges too, if the vertices were valid. Remove the first invalid edge only.
+    //检查边，不合法则去掉第一个不合法的边，并返回
     std::vector<const base::State *>::const_iterator prevState = states.begin(), state = prevState + 1;
     Vertex prevVertex = goal, pos = prev[goal];
     do {
@@ -486,7 +490,7 @@ ompl::base::PathPtr ompl::geometric::LazyPRM::constructSolution(const Vertex &st
         prevVertex = pos;
         pos = prev[pos];
     } while (prevVertex != pos);
-
+    //规划成功，返回规划结果
     PathGeometric *p = new PathGeometric(si_);
     for (std::vector<const base::State *>::const_reverse_iterator st = states.rbegin(); st != states.rend(); ++st)
         p->append(*st);
@@ -509,18 +513,18 @@ void ompl::geometric::LazyPRM::getPlannerData(base::PlannerData &data) const {
         data.addGoalVertex(base::PlannerDataVertex(stateProperty_[goalM_[i]], 1));
 
     // Adding edges and all other vertices simultaneously
-    foreach(const Edge e, boost::edges(g_)) {
-            const Vertex v1 = boost::source(e, g_);
-            const Vertex v2 = boost::target(e, g_);
-            data.addEdge(base::PlannerDataVertex(stateProperty_[v1]),
-                         base::PlannerDataVertex(stateProperty_[v2]));
+            foreach(const Edge e, boost::edges(g_)) {
+                    const Vertex v1 = boost::source(e, g_);
+                    const Vertex v2 = boost::target(e, g_);
+                    data.addEdge(base::PlannerDataVertex(stateProperty_[v1]),
+                                 base::PlannerDataVertex(stateProperty_[v2]));
 
-            // Add the reverse edge, since we're constructing an undirected roadmap
-            data.addEdge(base::PlannerDataVertex(stateProperty_[v2]),
-                         base::PlannerDataVertex(stateProperty_[v1]));
+                    // Add the reverse edge, since we're constructing an undirected roadmap
+                    data.addEdge(base::PlannerDataVertex(stateProperty_[v2]),
+                                 base::PlannerDataVertex(stateProperty_[v1]));
 
-            // Add tags for the newly added vertices
-            data.tagState(stateProperty_[v1], (vertexValidityProperty_[v1] & VALIDITY_TRUE) == 0 ? 0 : 1);
-            data.tagState(stateProperty_[v2], (vertexValidityProperty_[v2] & VALIDITY_TRUE) == 0 ? 0 : 1);
-        }
+                    // Add tags for the newly added vertices
+                    data.tagState(stateProperty_[v1], (vertexValidityProperty_[v1] & VALIDITY_TRUE) == 0 ? 0 : 1);
+                    data.tagState(stateProperty_[v2], (vertexValidityProperty_[v2] & VALIDITY_TRUE) == 0 ? 0 : 1);
+                }
 }
