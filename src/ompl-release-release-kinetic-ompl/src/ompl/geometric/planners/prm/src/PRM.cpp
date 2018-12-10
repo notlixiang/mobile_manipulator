@@ -97,6 +97,8 @@ ompl::geometric::PRM::PRM(const base::SpaceInformationPtr &si, bool starStrategy
                                std::bind(&PRM::getMilestoneCountString, this));
     addPlannerProgressProperty("edge count INTEGER",
                                std::bind(&PRM::getEdgeCountString, this));
+
+
 }
 
 ompl::geometric::PRM::~PRM() {
@@ -126,6 +128,7 @@ void ompl::geometric::PRM::setup() {
     // If no optimization objective was specified, then default to
     // optimizing path length as computed by the distance() function
     // in the state space.
+    //OMPL_INFORM("\n\n\n state 111111111111111111111111111\n\n\n");
     if (pdef_) {
         if (pdef_->hasOptimizationObjective())
             opt_ = pdef_->getOptimizationObjective();
@@ -403,7 +406,6 @@ ompl::base::PlannerStatus ompl::geometric::PRM::solve(const base::PlannerTermina
 
     // Ensure slnThread is ceased before exiting solve
     slnThread.join();
-
     OMPL_INFORM("%s: Created %u states", getName().c_str(), boost::num_vertices(g_) - nrStartStates);
 
     if (sol) {
@@ -455,6 +457,13 @@ ompl::geometric::PRM::Vertex ompl::geometric::PRM::addMilestone(base::State *sta
 
     // Initialize to its own (dis)connected component.
     disjointSets_.make_set(m);
+//    OMPL_INFORM("state %s",state);
+    double* val = static_cast<ompl::base::RealVectorStateSpace::StateType*>(state)->values;
+//    OMPL_INFORM("state %f %f %f %f %f %f %f %f",val[0],val[1],val[2],val[3],val[4],val[5],val[6],val[7]);
+//    for(int i=0;i<9;i++)
+//    {
+//        std::cout<<val[i];
+//    }
 
     // Which milestones will we attempt to connect to?
     const std::vector<Vertex> &neighbors = connectionStrategy_(m);

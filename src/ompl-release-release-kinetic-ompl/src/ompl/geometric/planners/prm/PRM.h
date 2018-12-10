@@ -48,6 +48,19 @@
 #include <vector>
 #include <map>
 
+
+#include <ompl/base/SpaceInformation.h>
+#include <ompl/base/spaces/SE3StateSpace.h>
+#include <ompl/base/samplers/ObstacleBasedValidStateSampler.h>
+#include <ompl/geometric/planners/prm/PRM.h>
+#include <ompl/geometric/SimpleSetup.h>
+
+#include <ompl/config.h>
+#include <iostream>
+#include <thread>
+
+
+
 namespace ompl {
 
     namespace base {

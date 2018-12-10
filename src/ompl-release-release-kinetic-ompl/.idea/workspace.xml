@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
+      <config projectName="ompl" targetName="test_state_operations" />
+      <config projectName="ompl" targetName="test_2dcircles_opt_geometric" />
       <config projectName="ompl" targetName="demo_CForestCircleGridBenchmark" />
       <config projectName="ompl" targetName="demo_GeometricCarPlanning" />
       <config projectName="ompl" targetName="demo_Koules" />
@@ -11,22 +13,21 @@
       <config projectName="ompl" targetName="ompl" />
       <config projectName="ompl" targetName="demo_VectorFieldNonconservative" />
       <config projectName="ompl" targetName="regression_test" />
-      <config projectName="ompl" targetName="demo_ThunderLightning" />
+      <config projectName="ompl" targetName="demo_PlannerProgressProperties" />
+      <config projectName="ompl" targetName="test_gridb" />
       <config projectName="ompl" targetName="test_state_storage" />
       <config projectName="ompl" targetName="demo_RigidBodyPlanningWithIntegrationAndControls" />
       <config projectName="ompl" targetName="demo_RigidBodyPlanningWithIK" />
       <config projectName="ompl" targetName="test_2denvs_geometric" />
-      <config projectName="ompl" targetName="test_gridb" />
+      <config projectName="ompl" targetName="demo_VectorFieldConservative" />
       <config projectName="ompl" targetName="test_pdf" />
       <config projectName="ompl" targetName="test_2dmap_control" />
       <config projectName="ompl" targetName="demo_PlannerData" />
       <config projectName="ompl" targetName="demo_HypercubeBenchmark" />
       <config projectName="ompl" targetName="demo_RigidBodyPlanningWithControls" />
-      <config projectName="ompl" targetName="demo_VectorFieldConservative" />
-      <config projectName="ompl" targetName="test_2dcircles_opt_geometric" />
-      <config projectName="ompl" targetName="test_heap" />
-      <config projectName="ompl" targetName="test_2dmap_geometric_simple" />
       <config projectName="ompl" targetName="test_machine_specs" />
+      <config projectName="ompl" targetName="demo_ThunderLightning" />
+      <config projectName="ompl" targetName="test_2dmap_geometric_simple" />
       <config projectName="ompl" targetName="test_state_spaces" />
       <config projectName="ompl" targetName="test_planner_data_control" />
       <config projectName="ompl" targetName="demo_KinematicChainBenchmark" />
@@ -35,12 +36,11 @@
       <config projectName="ompl" targetName="demo_OptimalPlanning" />
       <config projectName="ompl" targetName="demo_HybridSystemPlanning" />
       <config projectName="ompl" targetName="demo_StateSampling" />
-      <config projectName="ompl" targetName="test_planner_data" />
       <config projectName="ompl" targetName="py_ompl" />
       <config projectName="ompl" targetName="clean_bindings" />
       <config projectName="ompl" targetName="test_grid" />
-      <config projectName="ompl" targetName="test_state_operations" />
-      <config projectName="ompl" targetName="demo_PlannerProgressProperties" />
+      <config projectName="ompl" targetName="test_heap" />
+      <config projectName="ompl" targetName="test_planner_data" />
       <config projectName="ompl" targetName="test_2dmap_ik" />
       <config projectName="ompl" targetName="demo_RigidBodyPlanningWithODESolverAndControls" />
     </generated>
@@ -52,10 +52,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f6031fe-f9fb-4b01-b72e-245f3290f87a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeModules/ompl.pc" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeModules/ompl.pc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/py-bindings/ompl/util/libompl.so" beforeDir="false" afterPath="$PROJECT_DIR$/py-bindings/ompl/util/libompl.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/LazyPRM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/LazyPRM.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -72,34 +72,35 @@
     <session id="425104502">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="10" />
-          <entry key="h" value="24" />
+          <entry key="cpp" value="11" />
+          <entry key="h" value="28" />
           <entry key="hpp" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="39" />
+          <entry key="ObjectiveC" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="437" />
+          <entry key="cpp" value="623" />
+          <entry key="h" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="437" />
+          <entry key="ObjectiveC" value="627" />
         </counts>
       </usages-collector>
     </session>
@@ -109,62 +110,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="333" column="43" lean-forward="true" selection-start-line="333" selection-start-column="39" selection-end-line="333" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ompl/base/ValidStateSampler.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="425" column="50" lean-forward="true" selection-start-line="425" selection-start-column="50" selection-end-line="425" selection-end-column="50" />
+            <state relative-caret-position="463">
+              <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="29" selection-start-line="29" selection-end-line="129" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ompl/base/SpaceInformation.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="338" column="46" selection-start-line="338" selection-start-column="41" selection-end-line="338" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ompl/base/MotionValidator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ompl/base/src/DiscreteMotionValidator.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/LazyPRM.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-518">
+              <caret line="240" column="38" selection-start-line="240" selection-start-column="38" selection-end-line="240" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ompl/base/Planner.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="380" lean-forward="true" selection-start-line="380" selection-end-line="380" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/src/InformedStateSampler.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="149" column="51" lean-forward="true" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/UniformValidStateSampler.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/src/UniformValidStateSampler.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="31" />
+            <state relative-caret-position="47">
+              <caret line="378" column="70" selection-start-line="378" selection-start-column="70" selection-end-line="378" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -175,6 +176,7 @@
     <findStrings>
       <find>NearestNeighbors</find>
       <find>prev</find>
+      <find>Created</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,8 +185,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h" />
         <option value="$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/LazyPRM.cpp" />
+        <option value="$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h" />
         <option value="$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp" />
       </list>
     </option>
@@ -197,8 +199,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="182" />
-    <option name="y" value="229" />
+    <option name="x" value="57" />
+    <option name="y" value="309" />
     <option name="width" value="1863" />
     <option name="height" value="1056" />
   </component>
@@ -554,21 +556,22 @@
       <workItem from="1543991308038" duration="4854000" />
       <workItem from="1543996364698" duration="4648000" />
       <workItem from="1544005780998" duration="7162000" />
+      <workItem from="1544405739691" duration="4995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27582000" />
+    <option name="totallyTimeSpent" value="32577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="182" y="229" width="1863" height="1056" extended-state="0" />
+    <frame x="57" y="309" width="1863" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21574023" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21794166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.30125523" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -672,31 +675,13 @@
     </entry>
     <entry file="file:///usr/include/boost/graph/astar_search.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6615">
-          <folding>
-            <element signature="e#11330#11694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/LazyPRM.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="240" column="38" selection-start-line="240" selection-start-column="38" selection-end-line="240" selection-end-column="38" />
-        </state>
+        <state relative-caret-position="-6615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/LazyPRM.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ompl/base/SpaceInformation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="229" column="17" selection-start-line="229" selection-start-column="17" selection-end-line="229" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -733,41 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ompl/base/ValidStateSampler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="333" column="43" lean-forward="true" selection-start-line="333" selection-start-column="39" selection-end-line="333" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="425" column="50" lean-forward="true" selection-start-line="425" selection-start-column="50" selection-end-line="425" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/UniformValidStateSampler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/src/UniformValidStateSampler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ompl/base/spaces/src/DiscreteStateSpace.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="771">
@@ -779,13 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/src/InformedStateSampler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="149" column="51" lean-forward="true" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -803,6 +746,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/base/ValidStateSampler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ompl/base/StateSampler.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -810,10 +760,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/src/UniformValidStateSampler.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/LazyPRM.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-518">
+          <caret line="240" column="38" selection-start-line="240" selection-start-column="38" selection-end-line="240" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/UniformValidStateSampler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="866">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/base/samplers/src/InformedStateSampler.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="149" column="51" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ompl/base/Planner.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="380" lean-forward="true" selection-start-line="380" selection-end-line="380" />
+        <state relative-caret-position="47">
+          <caret line="378" column="70" selection-start-line="378" selection-start-column="70" selection-end-line="378" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/base/SpaceInformation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="338" column="46" selection-start-line="338" selection-start-column="41" selection-end-line="338" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/base/MotionValidator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/base/src/DiscreteMotionValidator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/PRM.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ompl/geometric/planners/prm/src/PRM.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="29" selection-start-line="29" selection-end-line="129" selection-end-column="26" />
         </state>
       </provider>
     </entry>
